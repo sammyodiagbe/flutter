@@ -15,11 +15,7 @@ class Screen1 extends StatelessWidget {
         child: GestureDetector(
           // style: ButtonStyle(backgroundColor: ),
           onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => Screen2(),
-                ));
+            Navigator.pushNamed(context, '/second');
           },
           child: Hero(
             tag: 'flyhero',
