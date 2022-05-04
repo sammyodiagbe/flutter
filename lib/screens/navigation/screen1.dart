@@ -11,17 +11,19 @@ class Screen1 extends StatelessWidget {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Center(
-          child: TextButton(
-            // style: ButtonStyle(backgroundColor: ),
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Screen2(),
-                  ));
-            },
-            child: Text('Go to other screen'),
+        color: Colors.orange,
+        child: GestureDetector(
+          // style: ButtonStyle(backgroundColor: ),
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Screen2(),
+                ));
+          },
+          child: Hero(
+            tag: 'flyhero',
+            child: Image.network('https://picsum.photos/250?image=9'),
           ),
         ),
       ),

@@ -12,9 +12,13 @@ class Screen2 extends StatelessWidget {
       body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          child: ElevatedButton(
-            child: Text('Go back'),
-            onPressed: () {
+          color: Colors.pink,
+          child: GestureDetector(
+            child: Hero(
+              tag: 'flyhero',
+              child: Image.network('https://picsum.photos/250?image=9'),
+            ),
+            onTap: () {
               Navigator.pop(context);
             },
           )),
