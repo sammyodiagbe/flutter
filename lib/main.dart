@@ -1,4 +1,5 @@
 import 'package:appui/screens/navigation/screen1.dart';
+import 'package:appui/screens/navigation/screen2.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -19,6 +20,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const Screen1(),
+      initialRoute: "/",
+      routes: {
+        '/': (context) => Screen1(),
+        '/second': (context) => Screen2(),
+      },
     );
   }
 }
