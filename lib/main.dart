@@ -1,3 +1,4 @@
+import 'package:appui/screens/forms/formScreen.dart';
 import 'package:appui/screens/navigation/screen1.dart';
 import 'package:appui/screens/navigation/screen2.dart';
 import 'package:flutter/material.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => Screen1(),
         '/second': (context) => Screen2(),
+        '/forms': (context) => FormsScreen()
       },
     );
   }

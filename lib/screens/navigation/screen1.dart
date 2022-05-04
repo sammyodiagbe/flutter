@@ -15,12 +15,9 @@ class Screen1 extends StatelessWidget {
         child: GestureDetector(
           // style: ButtonStyle(backgroundColor: ),
           onTap: () {
-            Navigator.pushNamed(context, '/second');
+            Navigator.pushNamed(context, '/forms');
           },
-          child: Hero(
-            tag: 'flyhero',
-            child: Image.network('https://picsum.photos/250?image=9'),
-          ),
+          child: Text('Go to forms.'),
         ),
       ),
     );
